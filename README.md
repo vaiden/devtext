@@ -19,11 +19,11 @@ Would produce:
     
 
 ## Installation
-###Global
+### Global
 ```
 npm install devtext -g
 ```
-###Local project
+### Local project
 ```
 npm install devtext -g
 ```
@@ -34,5 +34,5 @@ let devText = require('devtext');
 console.log(devText('{"menu":{"id":"file","value":"File"}}'));
 ```
 
-###License
+### License
 BSD
