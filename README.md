@@ -31,7 +31,7 @@ npm install devtext -g
 ```
 ### Local project
 ```
-npm install devtext -g
+npm install devtext
 ```
 And then:
 ```js
