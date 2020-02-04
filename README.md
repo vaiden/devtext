@@ -35,5 +35,5 @@ let devText = require('devtext');
 console.log(devText('{"menu":{"id":"file","value":"File"}}'));
 ```
 
-### License
+## License
 BSD
