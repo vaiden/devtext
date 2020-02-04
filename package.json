@@ -1,0 +1,38 @@
+{
+  "name": "devtext",
+  "version": "1.0.0",
+  "description": "A small tool for beautifying dev texts (stack traces, log outputs, JSONs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaiden/devtext.git"
+  },
+  "keywords": [
+    "dev",
+    "developer",
+    "text",
+    "json",
+    "beurify",
+    "highlight",
+    "hilight",
+    "stacktrace",
+    "tool",
+    "devtool"
+  ],
+  "author": "Nitzan Weidenfeld",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/vaiden/devtext/issues"
+  },
+  "homepage": "https://github.com/vaiden/devtext#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "bin": "cli.js",
+  "dependencies": {
+    "cli-color": "^2.0.0"
+  }
+}
