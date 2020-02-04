@@ -1,5 +1,10 @@
+[![NPM version](https://img.shields.io/npm/v/devtext.svg?style=flat)](https://npmjs.org/package/devtext) [![NPM downloads](https://img.shields.io/npm/dm/devtext.svg?style=flat)](https://npmjs.org/package/devtext) [![GitHub issues](https://img.shields.io/github/issues/vaiden/devtext.svg)](https://github.com/vaiden/devtext/issues)
+
+
 # devtext
-A small tool for beautifying dev texts (stack traces, log outputs, JSONs)
+A small tool for beautifying dev texts (stack traces, log outputs, JSONs).
+
+Prettify your emails/Jira defects with formatted stack traces, JSONs and URLs.
 
 ##### Supports
 * Stack trace
@@ -12,6 +17,7 @@ npx devtext -h 'com.framework.FrameworkException: Error in web request\n\tat com
 ```
 
 Would produce:
+
 ![Screen Shot 2020-02-04 at 22 58 32](https://user-images.githubusercontent.com/4964249/73786533-263c9500-47a2-11ea-9eeb-1d8353029caa.png)
 
 ### Parameters
@@ -34,5 +40,5 @@ let devText = require('devtext');
 console.log(devText('{"menu":{"id":"file","value":"File"}}'));
 ```
 
-### License
+## License
 BSD
