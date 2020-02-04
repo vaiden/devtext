@@ -12,6 +12,7 @@ npx devtext -h 'com.framework.FrameworkException: Error in web request\n\tat com
 ```
 
 Would produce:
+
 ![Screen Shot 2020-02-04 at 22 58 32](https://user-images.githubusercontent.com/4964249/73786533-263c9500-47a2-11ea-9eeb-1d8353029caa.png)
 
 ### Parameters
