@@ -8,7 +8,7 @@ module.exports = function() {
 
     }
 
-    text = text.replace(/\\\\n/g,'\n').replace(/\\\\t/g,'\t').replace(/\\n/g,'\n').replace(/\\t/g,'\t');
+    text = text.replace(/\\"/g,'"').replace(/\\\\n/g,'\n').replace(/\\\\t/g,'\t').replace(/\\n/g,'\n').replace(/\\t/g,'\t');
 
     return text;
 }

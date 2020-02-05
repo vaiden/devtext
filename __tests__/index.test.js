@@ -72,6 +72,10 @@ describe('Testing DevText lib', () => {
     test('decodes a URL encoded string', () => {
         expect(devText('https://home.org/test.asp?name=st%C3%A5le&car=saab')).toEqual('https://home.org/test.asp?name=ståle&car=saab')
     });
+
+    test('decodes quotation marks', () => {
+        expect(devText('{\\"menu\\":{\\"id\\":\\"file\\",\\"value\\":\\"File\\"}}')).toEqual('{"menu":{"id":"file","value":"File"}}')
+    });
 });
 
 

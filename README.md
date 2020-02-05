@@ -1,6 +1,5 @@
 ![Node.js CI](https://github.com/vaiden/devtext/workflows/Node.js%20CI/badge.svg) [![NPM version](https://img.shields.io/npm/v/devtext.svg?style=flat)](https://npmjs.org/package/devtext) [![NPM downloads](https://img.shields.io/npm/dm/devtext.svg?style=flat)](https://npmjs.org/package/devtext) [![GitHub issues](https://img.shields.io/github/issues/vaiden/devtext.svg)](https://github.com/vaiden/devtext/issues)
 
-
 # devtext
 A small tool for beautifying dev texts (stack traces, log outputs, JSONs, URLs).
 
