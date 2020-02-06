@@ -10,7 +10,7 @@ module.exports = function() {
             text = text.replace(/\n/g,EOL); // JSON.stringify() doesn't care for CRLFs apparently
         }
     }
-    } catch (e) {
+    catch (e) {
 
     }
 
