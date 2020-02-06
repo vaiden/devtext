@@ -3,15 +3,14 @@ const devText = require('../index');
 
 describe('Testing DevText lib', () => {
     test('decodes a \\t\\n stacktrace', () => {
-        expect(devText('Exception in thread "main" java.lang.NullPointerException\\n\\tat com.','example.myproject.Book.getTitle(Book.java:16)\\n\\tat com.example.myproject.Aut','hor.getBookTitles(Author.java:25)\\n\\tat com.example.myproject.Bootstrap.main(Bootstrap.java',':14)')).toEqual('Exception in thread "main" java.lang.NullPointerException\n' +
+        expect(devText('Exception in thread "main" java.lang.NullPointerException\\n\\tat com.example.myproject.Book.getTitle(Book.java:16)\\n\\tat com.example.myproject.Author.getBookTitles(Author.java:25)\\n\\tat com.example.myproject.Bootstrap.main(Bootstrap.java:14)')).toEqual('Exception in thread "main" java.lang.NullPointerException\n' +
             '\tat com.example.myproject.Book.getTitle(Book.java:16)\n' +
             '\tat com.example.myproject.Author.getBookTitles(Author.java:25)\n' +
             '\tat com.example.myproject.Bootstrap.main(Bootstrap.java:14)');
-
     });
 
     test('decodes a \\t\\n stacktrace, divided into args', () => {
-        expect(devText('Exception in thread "main" java.lang.NullPointerException\\n\\tat com.','example.myproject.Book.getTitle(Book.java:16)\\n\\tat com.example.myproject.Aut','hor.getBookTitles(Author.java:25)\\n\\tat com.example.myproject.Bootstrap.main(Bootstrap.java',':14)')).toEqual('Exception in thread "main" java.lang.NullPointerException\n' +
+        expect(devText('Exception in thread "main" java.lang.NullPointerException\\n\\tat','com.example.myproject.Book.getTitle(Book.java:16)\\n\\tat','com.example.myproject.Author.getBookTitles(Author.java:25)\\n\\tat','com.example.myproject.Bootstrap.main(Bootstrap.java:14)')).toEqual('Exception in thread "main" java.lang.NullPointerException\n' +
             '\tat com.example.myproject.Book.getTitle(Book.java:16)\n' +
             '\tat com.example.myproject.Author.getBookTitles(Author.java:25)\n' +
             '\tat com.example.myproject.Bootstrap.main(Bootstrap.java:14)');
