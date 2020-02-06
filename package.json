@@ -1,6 +1,6 @@
 {
   "name": "devtext",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A small tool for beautifying dev texts (stack traces, log outputs, JSONs)",
   "main": "index.js",
   "scripts": {
