@@ -9,10 +9,11 @@ if ( !process.argv || process.argv.length < 3 || (process.argv[2] == '-h' && pro
         var shouldHighlight = true;
     }
 
-    let result = devText(process.argv.slice(shouldHighlight? 3: 2));
+    let result = devText(...process.argv.slice(shouldHighlight? 3: 2));
     if ( shouldHighlight ){
         ['Caused by:', 'fatal error', 'SIGSEGV', 'ERROR:', 'panic:'].forEach( hl => result = result.replace(new RegExp(hl,"g"), clc.blueBright(hl) ));
     }
 
     console.log(result)
 }
+

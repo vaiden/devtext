@@ -2,6 +2,10 @@
 const { EOL } = require('os');
 
 module.exports = function() {
+
+    console.log(arguments.length)
+    console.log(arguments)
+
     let text = decodeURI(Array.prototype.join.call(arguments,' ')).replace(/^'(.+)'$/,'$1'); // We need to remove the '' on Windows
 
     try {
@@ -15,8 +19,6 @@ module.exports = function() {
     }
 
     text = text.replace(/\\"/g,'"').replace(/\\\\n/g,EOL).replace(/\\\\t/g,'\t').replace(/\\n/g,EOL).replace(/\\t/g,'\t');
-    
-    
 
     return text;
 }
