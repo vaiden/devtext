@@ -19,6 +19,14 @@ Would produce:
 
 ![Screen Shot 2020-02-04 at 22 58 32](https://user-images.githubusercontent.com/4964249/73786533-263c9500-47a2-11ea-9eeb-1d8353029caa.png)
 
+```
+npx devtext -h '{"menu":{"id":"file","value":"File","popup":{"menuitem":[{"value":"New","onclick":"CreateNewDoc()"},{"value":"Open","onclick":"OpenDoc()"},{"value":"Close","onclick":"CloseDoc()"}]}}}'
+```
+
+Would produce:
+
+![image](https://user-images.githubusercontent.com/4964249/74099355-5b8f0d00-4b2b-11ea-82f4-0f16bf9797f6.png)
+
 ### Parameters
     -h  highlight strings relevant to devs (such as 'caused by')
     
